@@ -1,0 +1,14 @@
+{
+  "name": "croquerlemonde",
+  "description": "Website where you can buy a new cook box every month from different country",
+  "author": "post-l",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "ejs": "*"
+  }
+}
