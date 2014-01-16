@@ -48,9 +48,8 @@ body {
 }
 
 .asset-box {
-  align: center;
-  width: 300px;
-  height: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* MARKETING CONTENT
@@ -131,11 +130,14 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
-
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
+  }
+
+  .asset-box {
+    padding-bottom: 20px;
   }
 }
