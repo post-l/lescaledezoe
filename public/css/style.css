@@ -37,13 +37,13 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 610px;
+  height: 615px;
   margin-bottom: 60px;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 610px;
+  height: 615px;
   background-color: #eb842b;
 }
 
