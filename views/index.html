@@ -1,52 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-   <title><%= title %></title>
-
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-    <link href="/css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- NAVBAR
-    ================================================== -->
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><%= title %></a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Accueil</a></li>
-		<li><a href="#compte">Mon Compte</a></li>
-		<li><a href="#blog">Le Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
+<% include header.html %>
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -65,7 +17,7 @@
 	      </div>
 	      <div class="col-md-6 caption">
 		<h1>Iran</h1>
-		<p>Ce mois-ci une découverte culinéaire exceptionnel l'Iran. Peu de gens connaissent
+		<p>Ce mois-ci une découverte culinéaire exceptionnelle l'Iran. Peu de gens connaissent
 		  les produits fares Iranniens.</p>
 		<p><strong>Plus que 8 Jours !</strong></p>
 		<div class="progress progress-striped active">
@@ -89,7 +41,7 @@
 	      </div>
 	      <div class="col-md-6 caption">
 		<h1>Ethiopie</h1>
-		<p>Ce mois-ci une découverte culinéaire exceptionnel l'Ethiopie. Peu de gens connaissent
+		<p>Ce mois-ci une découverte culinéaire exceptionnelle l'Ethiopie. Peu de gens connaissent
 		  les produits fares Ethiopien.</p>
 		<p><strong>Plus que 23 Jours !</strong></p>
 		<div class="progress progress-striped active">
@@ -121,11 +73,6 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="/images/instantaneite.jpg" alt="Generic placeholder image">
-          <h2>Instantanéité</h2>
-          <p>Nous avons pleinement conscience que vos journées et vos soirées sont cadencées à un rythme frénétique. Pour vous permettre de savourer une soirée en couple ou entre amis, nous vous proposons un système de choix extrêmement flexible – contenu de la (box ??), nombre de personnes, fréquence de livraison.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
           <img class="img-circle" src="/images/quality.jpg" alt="Generic placeholder image">
           <h2>Qualité</h2>
           <p>Envie de cuisiner avec des produits de qualité, mais pas le temps ni les bonnes infos pour les trouver ? (…) vous apporte sur un plateau d’argent – ou presque – les ingrédients nécessaires à l’élaboration d’un repas original et complet.</p>
@@ -134,6 +81,11 @@
           <img class="img-circle" src="/images/responsable.jpg" alt="Generic placeholder image">
           <h2>Responsabilité</h2>
           <p>(…) s’engage à vous renseigner sur l’origine des produits que vous recevrez. Pour nous, la cuisine du monde, ce n’est pas seulement consommer de l’exotisme mais aussi s’imprégner d’une culture, de traditions et de valeurs.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/images/instantaneite.jpg" alt="Generic placeholder image">
+          <h2>Flexibilité</h2>
+          <p>Nous avons pleinement conscience que vos journées et vos soirées sont cadencées à un rythme frénétique. Pour vous permettre de savourer une soirée en couple ou entre amis, nous vous proposons un système de choix extrêmement flexible – contenu de la (box ??), nombre de personnes, fréquence de livraison.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -179,18 +131,5 @@
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 <%= title %>, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
     </div><!-- /.container -->
-
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/holder.js"></script>
-  </body>
-</html>
+<% include footer.html %>

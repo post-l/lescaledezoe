@@ -3,11 +3,16 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
 }
 
-
+footer {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background: #222222;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
