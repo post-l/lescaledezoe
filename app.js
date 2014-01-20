@@ -10,8 +10,6 @@ app.engine('.html', require('ejs').__express);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
-console.log("env = " + app.get('env'));
-
 var config = require('./config/config')[app.get('env')];
 
 /**
