@@ -16,7 +16,7 @@ var config = require('./config/config')[app.get('env')];
  * MongoDB init (connect, models...)
  */
 
-mongoose.connect('mongodb://localhost/croquerlemonde');
+mongoose.connect(config.db);
 require('./models/user');
 require('./config/passport')(passport, config);
 
