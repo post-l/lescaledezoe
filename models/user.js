@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var hash = require('../utils/hash');
 
-UserSchema = mongoose.Schema({
+var UserSchema = mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,

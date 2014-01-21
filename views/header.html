@@ -15,42 +15,57 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <link href="/css/style.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
     <!-- NAVBAR
-    ================================================== -->
-    <div class="navbar-wrapper">
+	 ================================================== -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><%= title %></a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Accueil</a></li>
-		<% if (user) { %>
-		<li><a href="/profile">Mon Compte</a></li>
-		<% } else { %>
-		<li><a href="/login">Connexion</a></li>
-		<li><a href="/signup">Inscription</a></li>
-		<% } %>
-		<li><a href="/blog">Le Blog</a></li>
-                <li><a href="/contact">Contact</a></li>
-		<% if (user) { %>
-		<li><a href="/logout">Déconnexion</a></li>
-		<% } %>
-              </ul>
-            </div>
-          </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><%= title %></a>
         </div>
-
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Accueil</a></li>
+	    <% if (user) { %>
+	    <li><a href="/profile">Mon Compte</a></li>
+	    <% } else { %>
+	    <li><a href="/login">Connexion</a></li>
+	    <li><a href="/signup">Inscription</a></li>
+	    <% } %>
+	    <li><a href="#">Le Blog</a></li>
+	    <li><a href="#">Newsletter</a></li>
+	    <% if (user) { %>
+	    <li><a href="/logout">Déconnexion</a></li>
+	    <% } %>
+          </ul>
+	  <ul class="nav navbar-nav navbar-right nav-pills clearfix">
+	    <li>
+	      <a href="https://facebook.com/lescaledezoe" class="icon"
+	      	 target="_blank" title="suivez-nous sur Twitter">
+		<span class="fa-stack">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+		</span>
+	      </a>
+	    </li>
+	    <li>
+	      <a href="https://twitter.com/EscaleDeZoe" class="icon"
+	      	 target="_blank" title="suivez-nous sur Twitter">
+		<span class="fa-stack">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+		</span>
+	      </a>
+	    </li>
+	  </ul>
+        </div>
       </div>
     </div>

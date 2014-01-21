@@ -1,172 +1,150 @@
 /* GLOBAL STYLES
--------------------------------------------------- */
+   -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
 body {
-  color: #5a5a5a;
+    color: #5a5a5a;
+    padding-top: 51px;
 }
 
 footer {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
     padding-bottom: 5px;
-    background: #222222;
+    background: #333 url(../images/bg-blk.jpg) 0 0 repeat;
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
+footer h4 {
+    color: #ffffff;
+    font-size: 42px;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-.navbar-wrapper .navbar {
-  padding-left: 15px;
-  padding-right: 15px;
+.navbar-brand {
+    font-family: 'amatic_scregular';
+    font-size: 42px;
 }
 
+.clearfix > li > a {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.social-list > ul {
+    float: left;
+    align: left;
+    list-style: none;
+}
+
+.social-list > ul > li {
+    display: inline;
+}
+
+.social-list > ul > li > a {
+    color: #777777;
+}
 
 /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+   -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-  height: 615px;
-  margin-bottom: 60px;
+    height: 615px;
+    margin-bottom: 60px;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 615px;
-  background-color: #eb842b;
+    height: 615px;
+    background: #333 url(../images/bg-blk.jpg) 0 0 repeat;
+}
+
+.carousel .item h1 {
+    font-family: 'amatic_scregular';
+    font-size: 72px;
 }
 
 .asset-box img {
-    max-height: 250px;
-    display: block;
-    margin: auto;
+    max-height: 200px;
 }
 
 /* MARKETING CONTENT
--------------------------------------------------- */
+   -------------------------------------------------- */
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .marketing h2 {
-  font-weight: normal;
+    font-weight: normal;
 }
 .marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
 /* Featurettes
-------------------------- */
+   ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
-
 
 
 /* RESPONSIVE CSS
--------------------------------------------------- */
+   -------------------------------------------------- */
 
 @media (min-width: 768px) {
+    .marketing {
+	padding-left: 0;
+	padding-right: 0;
+    }
 
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .featurette-heading {
+	font-size: 50px;
+    }
 
-  Navbar positioning foo
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-left:  15px;
-    padding-right: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-left:  0;
-    padding-right: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Carousel base class */
-  .carousel {
-      height: 700px;
-  }
-
-  /* Declare heights because of positioning of img element */
-  .carousel .item {
-      height: 700px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+    .asset-box img {
+	max-height: 250px;
+    }
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+    .featurette-heading {
+	margin-top: 120px;
+    }
 
-  /* Carousel base class */
-  .carousel {
-      height: 500px;
-  }
+    .carousel {
+	height: 400px;
+    }
 
-  /* Declare heights because of positioning of img element */
-  .carousel .item {
-      height: 500px;
-  }
+    .carousel .item {
+	height: 400px;
+    }
+}
+
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('../fonts/amaticsc-regular-webfont.eot');
+    src: url('../fonts/amaticsc-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/amaticsc-regular-webfont.woff') format('woff'),
+    url('../fonts/amaticsc-regular-webfont.ttf') format('truetype'),
+    url('../fonts/amaticsc-regular-webfont.svg#amatic_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
