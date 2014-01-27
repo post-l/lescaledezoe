@@ -49,23 +49,23 @@ footer h4 {
 
 /* Carousel base class */
 .carousel {
-    height: 615px;
+    height: 564px;
     margin-bottom: 60px;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 615px;
+    height: 564px;
     background: #333 url(../images/bg-blk.jpg) 0 0 repeat;
 }
 
-.carousel .item h1 {
+.carousel-caption h1 {
     font-family: 'amatic_scregular';
     font-size: 72px;
 }
 
 .asset-box img {
-    max-height: 200px;
+    max-height: 130px;
 }
 
 /* MARKETING CONTENT
@@ -120,7 +120,7 @@ footer h4 {
     }
 
     .asset-box img {
-	max-height: 250px;
+	max-height: 180px;
     }
 }
 
@@ -130,11 +130,15 @@ footer h4 {
     }
 
     .carousel {
-	height: 400px;
+	height: 430px;
     }
 
     .carousel .item {
-	height: 400px;
+	height: 430px;
+    }
+
+    .asset-box img {
+	max-height: 250px;
     }
 }
 
