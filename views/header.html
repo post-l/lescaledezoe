@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Zoé est en vadrouille. A chaque escale dans un nouveau pays, elle vous fait découvrir ses spécialités culinaires.">
+    <meta name="keywords" content="L'Escale de Zoé,escale,decouverte,cuisiner,manger,voyager,monde,box,recette,cuisine">
 
    <title><%= title %></title>
 
@@ -14,8 +14,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link href="/css/style.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
   </head>
   <body>
     <!-- NAVBAR
@@ -34,22 +34,31 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="/">Accueil</a></li>
-	    <% if (user) { %>
-	    <li><a href="/profile">Mon Compte</a></li>
-	    <% } else { %>
-	    <li><a href="/login">Connexion</a></li>
-	    <li><a href="/signup">Inscription</a></li>
-	    <% } %>
 	    <li><a href="#">Le Blog</a></li>
-	    <li><a href="#">Newsletter</a></li>
-	    <% if (user) { %>
-	    <li><a href="/logout">Déconnexion</a></li>
-	    <% } %>
+	    <li><a href="#">A Propos</a></li>
+	    <li><a href="#">FAQ</a></li>
+	    <li><a href="#">Contact</a></li>
           </ul>
 	  <ul class="nav navbar-nav navbar-right nav-pills clearfix">
 	    <li>
+	      <a href="#" class="icon dropdown-toggle" data-toggle="dropdown" title="Paramètres">
+		<i class="fa fa-cog fa-2x"></i>
+	      </a>
+	      <ul class="dropdown-menu">
+		<% if (user) { %>
+		<li><a href="/profile">Mon Compte</a></li>
+		<li class="divider"></li>
+		<li><a href="/logout">Déconnexion</a></li>
+		<% } else { %>
+		<li><a href="/login">Connexion</a></li>
+		<li class="divider"></li>
+		<li><a href="/signup">Inscription</a></li>
+		<% } %>
+	      </ul>
+	    </li>
+	    <li>
 	      <a href="https://facebook.com/lescaledezoe" class="icon"
-	      	 target="_blank" title="suivez-nous sur Twitter">
+	      	 target="_blank" title="Likez notre page sur Facebook">
 		<span class="fa-stack">
 		  <i class="fa fa-circle fa-stack-2x"></i>
 		  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -58,7 +67,7 @@
 	    </li>
 	    <li>
 	      <a href="https://twitter.com/EscaleDeZoe" class="icon"
-	      	 target="_blank" title="suivez-nous sur Twitter">
+	      	 target="_blank" title="Suivez-nous sur Twitter">
 		<span class="fa-stack">
 		  <i class="fa fa-circle fa-stack-2x"></i>
 		  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
