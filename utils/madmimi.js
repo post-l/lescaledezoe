@@ -3,16 +3,16 @@ var http = require('http');
 var querystring = require('querystring');
 var xml2js = require('xml2js');
 
-module.exports = function (options) {
+module.exports = function (options, debug) {
 
     if (!options || !options.email || !options.api_key) {
         throw("need to specify username and api key");
     }
 
-    if (options.debug) {
+    if (debug) {
         logger = console.log;
     }  else {
-        logger = function () {};
+        logger = function() {};
     }
 
     this.username = options.email;

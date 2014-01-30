@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 var hash = require('../utils/hash');
+var Madmimi = require('../utils/madmimi');
+var config = require('../config/config');
 
 var UserSchema = mongoose.Schema({
     firstName: String,
@@ -31,6 +33,8 @@ UserSchema.statics.signup = function(email, password, done) {
         }, function(err, user) {
             if(err) throw err;
             // if (err) return done(err);
+            var madmimi = new Madmimi(config.madmimi);
+            madmimi.addToList(email, "users");
             done(null, user);
         });
     });
