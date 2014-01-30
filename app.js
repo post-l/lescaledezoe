@@ -1,4 +1,5 @@
 require('newrelic');
+var config = require('./config/config');
 var express = require('express');
 var http = require('http');
 var mongoose = require('mongoose');
@@ -11,7 +12,6 @@ app.engine('.html', require('ejs').__express);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
-var config = require('./config/config')[app.get('env')];
 
 /**
  * MongoDB init (connect, models...)
