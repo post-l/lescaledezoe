@@ -47,41 +47,6 @@ footer a:focus {
     padding-bottom: 100px;
 }
 
-.well-white {
-    background-color: #fff;
-    border: 1px solid #d5d5d5;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
-    position: relative;
-    box-sizing: border-box;
-    border-radius: 6px;
-    box-shaddow: 0 1px 2px rgba(0, 0, 0, .075);
-}
-
-.well-white .page-header h1 {
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 22px;
-    padding-left: 20px;
-}
-
-.well-white .form {
-    margin-top: 20px;
-    padding: 0 20px;
-}
-
-.well-white .cf {
-    zoom: 1;
-}
-
-.well-white .left {
-    float: left;
-}
-
-.well-white .right {
-    float: right;
-}
-
 .carousel {
     height: 564px;
     margin-bottom: 60px;

@@ -3,8 +3,8 @@ var config = require('./config/config');
 var express = require('express');
 var http = require('http');
 var mongoose = require('mongoose');
-var passport = require('passport');
 var path = require('path');
+var passport = require('passport');
 
 var app = express();
 app.set('port', process.env.PORT || 3000);
@@ -50,7 +50,7 @@ app.use(passport.session());
 app.use(app.router);
 app.use(express.compress());
 app.use(express.static(path.join(__dirname, 'public')));
-require('./config/routes')(app, passport, config);
+require('./config/routes')(app, config);
 
 /**
  * Create http server

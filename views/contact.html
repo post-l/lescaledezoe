@@ -1,0 +1,62 @@
+<% include header.html %>
+    <div class="container my-container">
+      <div class="row">
+	<div class="col-sm-offset-3 col-sm-6">
+	  <form name="sentMessage" class="well" id="contactForm" novalidate>
+            <legend>Contact</legend>
+            <div class="control-group">
+              <div class="controls">
+		<input type="text" class="form-control"
+                       placeholder="Prénom et Nom" id="name" name="name" required
+                       data-validation-required-message="Veuillez entrer votre prénom et votre nom" />
+		<p class="help-block"></p>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="controls">
+		<input type="email" class="form-control" placeholder="Email"
+                       id="email" name="email" required
+                       data-validation-required-message="veuillez entrer votre email" />
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="controls">
+		<input type="text" class="form-control" placeholder="Sujet"
+                       id="subject" name="subject" required
+                       data-validation-required-message="veuillez entrer votre sujet" />
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="controls">
+		<textarea rows="10" cols="100" class="form-control"
+			  placeholder="Message" id="message" name="message" required
+			  data-validation-required-message="Veuillez entrer votre message" minlength="5"
+			  data-validation-minlength-message="Min 5 caractères"
+			  maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            <button type="submit" class="btn btn-info pull-right">Envoyer</button><br />
+	  </form>
+	</div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47311299-1', 'lescaledezoe.com');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>
