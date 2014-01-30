@@ -1,7 +1,3 @@
-/* GLOBAL STYLES
-   -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
     background-color: #f8f8f8;
     padding-top: 51px;
@@ -39,6 +35,11 @@ footer a:focus {
 .clearfix > li > a {
     padding-top: 11px;
     padding-bottom: 11px;
+}
+
+.addthis_toolbox {
+    width: 242px;
+    margin: 0 auto;
 }
 
 .my-container {
@@ -81,16 +82,11 @@ footer a:focus {
     float: right;
 }
 
-/* CUSTOMIZE THE CAROUSEL
-   -------------------------------------------------- */
-
-/* Carousel base class */
 .carousel {
     height: 564px;
     margin-bottom: 60px;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel .item {
     height: 564px;
     background: #333 url(../images/bg-blk.jpg) 0 0 repeat;
@@ -101,20 +97,19 @@ footer a:focus {
     font-size: 72px;
 }
 
+.caption p {
+    font-size:13px;
+}
+
 .asset-box img {
     max-height: 130px;
 }
 
-/* MARKETING CONTENT
-   -------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
 .marketing {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
     text-align: center;
     margin-bottom: 20px;
@@ -127,15 +122,10 @@ footer a:focus {
     margin-right: 10px;
 }
 
-
-/* Featurettes
-   ------------------------- */
-
 .featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 80px 0;
 }
 
-/* Thin out the marketing headings */
 .featurette-heading {
     font-weight: 300;
     line-height: 1;
@@ -147,10 +137,6 @@ footer a:focus {
     line-height: 1;
     letter-spacing: -1px;
 }
-
-
-/* RESPONSIVE CSS
-   -------------------------------------------------- */
 
 @media (min-width: 768px) {
     .marketing {
@@ -201,27 +187,37 @@ footer a:focus {
 }
 
 .flex-video {
-      position: relative;
-  padding-top: 25px;
-  padding-bottom: 67.5%;
-  height: 0;
-  margin-bottom: 16px;
-  overflow: hidden;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0;
+    margin-bottom: 16px;
+    overflow: hidden;
 }
 
-.flex-video.widescreen { padding-bottom: 57.25%; }
-.flex-video.vimeo { padding-top: 0; }
+.flex-video.widescreen {
+    padding-bottom: 57.25%;
+}
+
+.flex-video.vimeo {
+    padding-top: 0;
+}
 
 .flex-video iframe,
 .flex-video object,
 .flex-video embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-    .flex-video { padding-top: 0; }
+@media only screen and (max-device-width: 800px),
+only screen and (device-width: 1024px) and (device-height: 600px),
+only screen and (width: 1280px) and (orientation: landscape),
+only screen and (device-width: 800px), only screen and (max-width: 767px) {
+    .flex-video {
+	padding-top: 0;
+    }
 }
