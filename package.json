@@ -19,6 +19,7 @@
         "passport-facebook": "*",
         "passport-google-oauth": "*",
         "mongoose": "~3.6.4",
-        "newrelic": "*"
+        "newrelic": "*",
+        "xml2js": "*"
   }
 }

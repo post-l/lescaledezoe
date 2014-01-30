@@ -64,6 +64,23 @@
 
     <div class="container marketing">
 
+      <div class="featurette newsletter">
+	<h2 class="newsletter-heading text-center"><span class="text-muted">Inscrivez-vous à notre</span> Newsletter !</h2>
+	<form role="form" action="/newsletter" method="post">
+	  <div class="row">
+	    <div class="input-group margin-bottom-sm col-xs-10 col-sm-6 col-xs-offset-1 col-sm-offset-3">
+	      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+	      <input class="form-control" name="email" type="text" placeholder="Email">
+	      <span class="input-group-btn">
+		<button type="submit" class="btn btn-default">S'inscrire</button>
+	      </span>
+	    </div>
+	  </div>
+	</form>
+      </div>
+
+      <hr class="featurette-divider">
+
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
@@ -83,18 +100,17 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-      <!-- START THE FEATURETTES -->
-
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-	<div class="col-md-7">
-	  <h2 class="featurette-heading"><span class="text-muted">Découvrez-moi en</span> images !</h2>
-	</div>
-	<div class="col-md-5">
-	  <div class="flex-video widescreen">
-	    <iframe src="https://www.youtube-nocookie.com/embed/kIB7OBOgW20?rel=0"
-		    frameborder="0" allowfullscreen=""></iframe>
+      <div class="featurette">
+	<h2 class="featurette-heading text-center"><span class="text-muted">Découvrez-moi en</span> images !</h2>
+	<br><br>
+	<div class="row">
+	  <div class="col-md-8 col-md-offset-2">
+	    <div class="flex-video widescreen">
+	      <iframe src="https://www.youtube-nocookie.com/embed/kIB7OBOgW20?rel=0"
+		      frameborder="0" allowfullscreen=""></iframe>
+	    </div>
 	  </div>
 	</div>
       </div>
