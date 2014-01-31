@@ -3,13 +3,13 @@
   <div class="row">
     <div class="col-sm-offset-3 col-sm-6">
       <form name="login" class="well" id="loginForm"
-	    role="form" action="/login" method="post">
-	<legend>Connexion</legend>
+	    role="form" action="/profile" method="post">
+	<legend>Mon Compte</legend>
 	<div class="control-group">
 	  <div class="controls">
 	    <div class="form-group input-group">
 	      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-	      <input class="form-control" name="email" type="email" placeholder="Email">
+	      <input class="form-control" name="email" type="email" placeholder="Email" value="<%= user.email %>">
 	    </div>
 	  </div>
 	</div>
@@ -21,11 +21,7 @@
 	    </div>
 	  </div>
 	</div>
-	<label class="checkbox">
-	  <input type="checkbox" name="persistent" value="1" checked="1"> Garder ma session active
-	</label>
-	<a href="/signup">S'inscrire</a>
-	<button type="submit" class="btn btn-info btn-large pull-right">Connexion</button>
+	<button type="submit" class="btn btn-info btn-large">Modifier</button>
       </form>
     </div>
   </div>

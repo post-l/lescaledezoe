@@ -21,6 +21,7 @@
         "mongoose": "~3.6.4",
         "newrelic": "*",
         "nodemailer": "*",
-        "xml2js": "*"
+        "xml2js": "*",
+        "paypal-rest-sdk": "*"
   }
 }
