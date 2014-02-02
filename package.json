@@ -1,9 +1,8 @@
 {
-    "name": "croquerlemonde",
+    "name": "lescaledezoe",
     "description": "Website where you can buy a new cook box every month from different country",
     "author": "post-l",
     "version": "0.0.1",
-    "private": true,
     "engines": {
         "node": "0.10.x"
     },
