@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var LocalStrategy = require('passport-local').Strategy;
-var FacebookStrategy = require('passport-facebook').Strategy;
-var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+// var FacebookStrategy = require('passport-facebook').Strategy;
+// var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 var User = mongoose.model('User');
 
@@ -24,25 +24,25 @@ module.exports = function (passport, config) {
         User.isValidUserPassword(email, password, done);
     }));
 
-    passport.use(new FacebookStrategy({
-        clientID: config.facebook.clientID,
-        clientSecret: config.facebook.clientSecret,
-        callbackURL: config.facebook.callbackURL
-    }, function(accessToken, refreshToken, profile, done) {
-        profile.authOrigin = 'facebook';
-        User.findOrCreateOAuthUser(profile, function(err, user) {
-            return done(err, user);
-        });
-    }));
+    // passport.use(new FacebookStrategy({
+    //     clientID: config.facebook.clientID,
+    //     clientSecret: config.facebook.clientSecret,
+    //     callbackURL: config.facebook.callbackURL
+    // }, function(accessToken, refreshToken, profile, done) {
+    //     profile.authOrigin = 'facebook';
+    //     User.findOrCreateOAuthUser(profile, function(err, user) {
+    //         return done(err, user);
+    //     });
+    // }));
 
-    passport.use(new GoogleStrategy({
-        clientID: config.google.clientID,
-        clientSecret: config.google.clientSecret,
-        callbackURL: config.google.callbackURL
-    }, function(accessToken, refreshToken, profile, done) {
-        profile.authOrigin = 'google';
-        User.findOrCreateOAuthUser(profile, function(err, user) {
-            return done(err, user);
-        });
-    }));
+    // passport.use(new GoogleStrategy({
+    //     clientID: config.google.clientID,
+    //     clientSecret: config.google.clientSecret,
+    //     callbackURL: config.google.callbackURL
+    // }, function(accessToken, refreshToken, profile, done) {
+    //     profile.authOrigin = 'google';
+    //     User.findOrCreateOAuthUser(profile, function(err, user) {
+    //         return done(err, user);
+    //     });
+    // }));
 };
