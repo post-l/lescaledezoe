@@ -30,7 +30,7 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
-if ('development' == app.get('env')) {
+if (app.get('env') == 'development') {
   app.use(express.errorHandler());
 }
 
@@ -56,6 +56,6 @@ require('./config/routes')(app, config);
  * Create http server
  */
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });

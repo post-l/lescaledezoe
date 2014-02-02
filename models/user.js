@@ -92,5 +92,4 @@ UserSchema.statics.findOrCreateOAuthUser = function(profile, done) {
         }});
 };
 
-var User = mongoose.model("User", UserSchema);
-module.exports = User;
+module.exports = mongoose.model("User", UserSchema);
